@@ -1,8 +1,5 @@
-a=str(input())
-b = [float (c.strip()) for c in a.split(",") if c.strip()]
-f=sum(b)
-print(f)
-e=len(b)
-print(e)
-d=f/e
-print(d)
+def average(nums):
+    if not nums:
+        return 0
+    avg = sum(nums) / len(nums)
+    return round(avg, 1)
